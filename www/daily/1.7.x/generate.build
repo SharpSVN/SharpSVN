@@ -2,19 +2,12 @@
 <project name="Generate log" default="build-log" basedir=".">
 
   <target name="build-log">
-	<loadfile file="../../../last.uri" property="dlUrl" />
-	<loadfile file="../../../last-x64.uri" property="dlX64Url" />
-	<loadfile file="../../../last.ex.uri" property="dlExUrl" />
-    <property name="dlX64Url" value="${string::trim(dlX64Url)}" />  
-    <property name="dlUrl" value="${string::trim(dlUrl)}" />  
-    <property name="dlExUrl" value="${string::trim(dlExUrl)}" />  
-  
     <property name="baseDate" value="${datetime::to-string(datetime::now() - timespan::from-days(31))}" />
     <property name="baseDate" value="${string::substring(baseDate,6,4)}${string::substring(baseDate,0,2)}${string::substring(baseDate,3,2)}" />
     <exec program="svn.exe" verbose="true" output="project-log.xml">
       <arg line="log -v --xml -r" />
       <arg value="${report.buildRev}:{${baseDate}}" />
-      <arg value="https://ctf.open.collab.net/svn/repos/sharpsvn/branches/1.800x/src" />
+      <arg value="https://ctf.open.collab.net/svn/repos/sharpsvn/branches/1.700x/src" />
     </exec>
     <style
       style="generate-daily-report.xsl"

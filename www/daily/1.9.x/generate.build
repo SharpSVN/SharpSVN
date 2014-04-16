@@ -7,7 +7,7 @@
     <exec program="svn.exe" verbose="true" output="project-log.xml">
       <arg line="log -v --xml -r" />
       <arg value="${report.buildRev}:{${baseDate}}" />
-      <arg value="https://ctf.open.collab.net/svn/repos/sharpsvn/branches/1.800x/src" />
+      <arg value="https://ctf.open.collab.net/svn/repos/sharpsvn/trunk/src" />
     </exec>
     <style
       style="generate-daily-report.xsl"
