@@ -13,8 +13,8 @@
     <property name="baseDate" value="${string::substring(baseDate,6,4)}${string::substring(baseDate,0,2)}${string::substring(baseDate,3,2)}" />
     <exec program="svn.exe" verbose="true" output="project-log.xml">
       <arg line="log -v --xml -r" />
-      <arg value="BASE:{${baseDate}}" />
-      <arg value="../../../src" />
+      <arg value="${report.buildRev}:{${baseDate}}" />
+      <arg value="https://ctf.open.collab.net/svn/repos/sharpsvn/branches/1.800x/src" />
     </exec>
     <style
       style="generate-daily-report.xsl"
