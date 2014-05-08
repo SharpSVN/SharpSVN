@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>
-          SharpSvn-Daily Update - 1.8991.3179.46</title>
+          SharpSvn-Daily Update - 1.8991.3268.65</title>
 <link rel="Stylesheet" type="text/css" href="daily.css"></head><body>
 <h1>
-          SharpSvn-Daily Update - 1.8991.3179.46</h1>
+          SharpSvn-Daily Update - 1.8991.3268.65</h1>
 
 
 <p>
@@ -15,25 +15,50 @@
 
 
 <h2>
-          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/8490/SSvn-1.8991.3179.46.zip">SharpSvn-1.8991.3179.46</a>.
+          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/8737/SSvn-1.8991.3268.65.zip">SharpSvn-1.8991.3268.65</a>.
         </h2>
 
 <p>
-          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/8491/SSvn-1.8991.3179.46-x64.zip">x64 version</a> of this Win32 build and a
-          <a href="https://sharpsvn.open.collab.net/files/documents/180/8492/SharpSvn-v1.900x-1.8991.3179.46.7z">package of all binaries</a> with some extras.
+          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/8738/SSvn-1.8991.3268.65-x64.zip">x64 version</a> of this Win32 build and a
+          <a href="https://sharpsvn.open.collab.net/files/documents/180/8739/SharpSvn-v1.900x-1.8991.3268.65.7z">package of all binaries</a> with some extras.
         </p>
 
 
 
 <p>
           You can find older daily releases in the <a href="http://sharpsvn.net/daily/?all=1">daily folder</a> of documents &amp; files.
-          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3179">Subversion Repository</a>.
+          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3268">Subversion Repository</a>.
         </p><p>Published daily builds will be available for at least a month after they are build.</p>
 
 
 
 <h2>Recent changes</h2>
 <table>
+<tr class="d"><td colspan="4">2014-05-08</td></tr>
+<tr><td> </td><td class="r"><a id="3266" href="http://sharpsvn.net/rev/?r=3266">
+            [r3266]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/nuget:</strong> SharpSvn.1.9-x64.nuspec, SharpSvn.1.9-x86.nuspec</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Add strict items to nuspec file</td></tr>
+<tr><td> </td><td class="r"><a id="3265" href="http://sharpsvn.net/rev/?r=3265">
+            [r3265]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/nuget:</strong> SharpSvn.1.9-x86.nuspec</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Fix x86 svnExe/Dll references in nuget spec</td></tr>
+<tr class="d"><td colspan="4">2014-05-05</td></tr>
+<tr><td> </td><td class="r"><a id="3215" href="http://sharpsvn.net/rev/?r=3215">
+            [r3215]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/tools/CollabUpload:</strong> Program.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Properly handle yet another CEE formatting error class, to fix
+uploading binaries.</td></tr>
+<tr><td> </td><td class="r"><a id="3212" href="http://sharpsvn.net/rev/?r=3212">
+            [r3212]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn/EventArgs:</strong> SvnInfoEventArgs.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Add .MovedFrom and .MovedTo properties to SvnInfoEventArgs.</td></tr>
+<tr><td> </td><td class="r"><a id="3211" href="http://sharpsvn.net/rev/?r=3211">
+            [r3211]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn/EventArgs:</strong> SvnInfoEventArgs.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Add .WorkingCopyRoot property to SvnInfoEventArgs class.</td></tr>
+<tr class="d"><td colspan="4">2014-04-16</td></tr>
+<tr><td> </td><td class="r"><a id="3184" href="http://sharpsvn.net/rev/?r=3184">
+            [r3184]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/nuget:</strong> SharpSvn.1.9-x64.nuspec, SharpSvn.1.9-x86.nuspec</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Mark 1.9 nuget packages as alpha</td></tr>
+<tr><td> </td><td class="r"><a id="3182" href="http://sharpsvn.net/rev/?r=3182">
+            [r3182]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn/Args/Youngest.h, SharpSvn/Commands/Youngest.cpp, SharpSvn/SharpSvn.vcxproj, SharpSvn/SharpSvn.vcxproj.filters, SharpSvn/SvnClient.h, SharpSvn/SvnEnums.h, SharpSvn.Tests/Commands/InfoTests.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Implement the equivalent of 'svn youngest' in SharpSvn.</td></tr>
 <tr class="d"><td colspan="4">2014-04-13</td></tr>
 <tr><td> </td><td class="r"><a id="3171" href="http://sharpsvn.net/rev/?r=3171">
             [r3171]
@@ -75,7 +100,7 @@ Previously this file was always rewritten when Errors2Enum.exe was modified;
 which is every build on a buildbot that forces explicit assembly revisions.</td></tr>
 <tr><td> </td><td class="r"><a id="3098" href="http://sharpsvn.net/rev/?r=3098">
             [r3098]
-          </a></td><td class="a">rhuijben</td><td class="f">, src/SharpSvn.TestBuilder/SharpSvn.TestBuilder.csproj, src/SharpSvn.sln</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Setup CTF support in AnkhSVN project settings.</td></tr>
+          </a></td><td class="a">rhuijben</td><td class="f">, src/SharpSvn.TestBuilder/SharpSvn.TestBuilder.csproj, src/SharpSvn.sln</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Setup CTF support in SharpSVN project settings.</td></tr>
 <tr class="d"><td colspan="4">2014-03-24</td></tr>
 <tr><td> </td><td class="r"><a id="3096" href="http://sharpsvn.net/rev/?r=3096">
             [r3096]
