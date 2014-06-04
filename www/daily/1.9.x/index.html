@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>
-          SharpSvn-Daily Update - 1.8991.3268.65</title>
+          SharpSvn-Daily Update - 1.8991.3287.79</title>
 <link rel="Stylesheet" type="text/css" href="daily.css"></head><body>
 <h1>
-          SharpSvn-Daily Update - 1.8991.3268.65</h1>
+          SharpSvn-Daily Update - 1.8991.3287.79</h1>
 
 
 <p>
@@ -15,25 +15,29 @@
 
 
 <h2>
-          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/8737/SSvn-1.8991.3268.65.zip">SharpSvn-1.8991.3268.65</a>.
+          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/9057/SSvn-1.8991.3287.79.zip">SharpSvn-1.8991.3287.79</a>.
         </h2>
 
 <p>
-          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/8738/SSvn-1.8991.3268.65-x64.zip">x64 version</a> of this Win32 build and a
-          <a href="https://sharpsvn.open.collab.net/files/documents/180/8739/SharpSvn-v1.900x-1.8991.3268.65.7z">package of all binaries</a> with some extras.
+          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/9058/SSvn-1.8991.3287.79-x64.zip">x64 version</a> of this Win32 build and a
+          <a href="https://sharpsvn.open.collab.net/files/documents/180/9059/SharpSvn-v1.900x-1.8991.3287.79.7z">package of all binaries</a> with some extras.
         </p>
 
 
 
 <p>
           You can find older daily releases in the <a href="http://sharpsvn.net/daily/?all=1">daily folder</a> of documents &amp; files.
-          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3268">Subversion Repository</a>.
+          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3287">Subversion Repository</a>.
         </p><p>Published daily builds will be available for at least a month after they are build.</p>
 
 
 
 <h2>Recent changes</h2>
 <table>
+<tr class="d"><td colspan="4">2014-05-09</td></tr>
+<tr><td> </td><td class="r"><a id="3270" href="http://sharpsvn.net/rev/?r=3270">
+            [r3270]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn/Args:</strong> Info.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Allow setting .SvnInfoArgs .RetrieveExcluded and .RetrieveActualOnly.</td></tr>
 <tr class="d"><td colspan="4">2014-05-08</td></tr>
 <tr><td> </td><td class="r"><a id="3266" href="http://sharpsvn.net/rev/?r=3266">
             [r3266]
@@ -69,49 +73,6 @@ uploading binaries.</td></tr>
 <tr><td> </td><td class="r"><a id="3167" href="http://sharpsvn.net/rev/?r=3167">
             [r3167]
           </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn.wxs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Remove sharpplink pdb from .wxs</td></tr>
-<tr class="d"><td colspan="4">2014-04-03</td></tr>
-<tr><td> </td><td class="r"><a id="3143" href="http://sharpsvn.net/rev/?r=3143">
-            [r3143]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn/SvnClient.cpp, SharpSvn.Tests/SvnClientTests.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Resolve ArgumentNullException when retrieving the repository id of a non
-existing local path.</td></tr>
-<tr class="d"><td colspan="4">2014-03-26</td></tr>
-<tr><td> </td><td class="r"><a id="3139" href="http://sharpsvn.net/rev/?r=3139">
-            [r3139]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn.TestBuilder/SvnSandBox.cs, SharpSvn.Tests/Commands/AddTests.cs, SharpSvn.Tests/Commands/BlameTests.cs, SharpSvn.Tests/Commands/CommitTests.cs, SharpSvn.Tests/Commands/CopyTests.cs, SharpSvn.Tests/Commands/DeleteTests.cs, SharpSvn.Tests/Commands/DiffTests.cs, SharpSvn.Tests/Commands/ExportTests.cs, SharpSvn.Tests/Commands/GetRevisionPropertyTests.cs, SharpSvn.Tests/Commands/LogTests.cs, SharpSvn.Tests/Commands/MergeTests.cs, SharpSvn.Tests/Commands/MoveTests.cs, SharpSvn.Tests/Commands/RelocateTests.cs, SharpSvn.Tests/Commands/ResolveTests.cs (and -8 other paths)</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">More test plumbing cleanups. Most dependencies on other things than the
-sandbox are now removed.</td></tr>
-<tr><td> </td><td class="r"><a id="3136" href="http://sharpsvn.net/rev/?r=3136">
-            [r3136]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn.TestBuilder/SandBoxRepository.cs, SharpSvn.TestBuilder/SvnSandBox.cs, SharpSvn.Tests/AdminCommands/DumpTest.cs, SharpSvn.Tests/Commands/AddTests.cs, SharpSvn.Tests/Commands/BlameTests.cs, SharpSvn.Tests/Commands/CapabilitiesTests.cs, SharpSvn.Tests/Commands/CheckOutTests.cs, SharpSvn.Tests/Commands/CommitTests.cs, SharpSvn.Tests/Commands/CopyTests.cs, SharpSvn.Tests/Commands/CreateDirectoryTests.cs, SharpSvn.Tests/Commands/CreateRepositoryTests.cs, SharpSvn.Tests/Commands/DeleteTests.cs, SharpSvn.Tests/Commands/DiffTests.cs, SharpSvn.Tests/Commands/ExportTests.cs (and -8 other paths)</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Convert the entire testsuite to using the SvnSandbox infrastructure directly
-instead of via several layers of compatibility.</td></tr>
-<tr><td> </td><td class="r"><a id="3135" href="http://sharpsvn.net/rev/?r=3135">
-            [r3135]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn.TestBuilder/SvnSandBox.cs, SharpSvn.Tests/Commands/AddTests.cs, SharpSvn.Tests/Commands/AuthenticationTests.cs, SharpSvn.Tests/Commands/CreateDirectoryTests.cs, SharpSvn.Tests/Commands/DiffSummaryTests.cs, SharpSvn.Tests/Commands/ExceptionTests.cs, SharpSvn.Tests/Commands/GetPropertyTests.cs, SharpSvn.Tests/Commands/GetSuggestedMergeSourcesTests.cs, SharpSvn.Tests/Commands/ImportTests.cs, SharpSvn.Tests/Commands/InfoTests.cs, SharpSvn.Tests/Commands/ListTests.cs, SharpSvn.Tests/Commands/LockTests.cs, SharpSvn.Tests/Commands/LogTests.cs, SharpSvn.Tests/Commands/MoveTests.cs (and -8 other paths)</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Cleanup a lot of test code... Switch users of the merge repository to the sbox
-handling.</td></tr>
-<tr><td> </td><td class="r"><a id="3125" href="http://sharpsvn.net/rev/?r=3125">
-            [r3125]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> SvnClientArgs.cpp, SvnClientArgs.h, SvnException.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Make it easier to ignore specific error causes that might be wrapped by other
-subversion errors.</td></tr>
-<tr class="d"><td colspan="4">2014-03-25</td></tr>
-<tr><td> </td><td class="r"><a id="3099" href="http://sharpsvn.net/rev/?r=3099">
-            [r3099]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/tools/Errors2Enum:</strong> Program.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Reduce total buildbot build time by avoiding changes to SvnWindowsError.h when
-possible.<br>
-Previously this file was always rewritten when Errors2Enum.exe was modified;
-which is every build on a buildbot that forces explicit assembly revisions.</td></tr>
-<tr><td> </td><td class="r"><a id="3098" href="http://sharpsvn.net/rev/?r=3098">
-            [r3098]
-          </a></td><td class="a">rhuijben</td><td class="f">, src/SharpSvn.TestBuilder/SharpSvn.TestBuilder.csproj, src/SharpSvn.sln</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Setup CTF support in SharpSVN project settings.</td></tr>
-<tr class="d"><td colspan="4">2014-03-24</td></tr>
-<tr><td> </td><td class="r"><a id="3096" href="http://sharpsvn.net/rev/?r=3096">
-            [r3096]
-          </a></td><td class="a">rhuijben</td><td class="f">imports/Default.build, imports/scripts/default.build, imports/scripts/libgit2.build, imports/scripts/prepare.build, src/SharpGit, src/SharpGit.Tests, src/SharpSvn.sln</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Remove SharpGit support from the SharpSvn build. This has been extracted to its own repository</td></tr>
-<tr class="d"><td colspan="4">2014-03-23</td></tr>
-<tr><td> </td><td class="r"><a id="3086" href="http://sharpsvn.net/rev/?r=3086">
-            [r3086]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn.MSBuild:</strong> FileParsers/CSharpParser.cs, FileParsers/FSharpParser.cs, Install.wxs, SharpSvn.MSBuild.csproj, targets/Projects/SharpSvn.fsproj.targets</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Add support for F# projects to the assembly transform MSBuild task.</td></tr>
-<tr><td> </td><td class="r"><a id="3084" href="http://sharpsvn.net/rev/?r=3084">
-            [r3084]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpGit/AssemblyInfo.cpp, SharpGit/GitClient/GitAdd.cpp, SharpGit/GitClient/GitAdd.h, SharpGit/GitClient/GitCheckOut.cpp, SharpGit/GitClient/GitCheckOut.h, SharpGit/GitClient/GitClient.cpp, SharpGit/GitClient/GitClient.h, SharpGit/GitClient/GitClientEventArgs.h, SharpGit/GitClient/GitClone.cpp, SharpGit/GitClient/GitClone.h, SharpGit/GitClient/GitCommitCmd.cpp, SharpGit/GitClient/GitCommitCmd.h, SharpGit/GitClient/GitDelete.cpp, SharpGit/GitClient/GitDelete.h (and -8 other paths)</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Set eol-style on *</td></tr>
 
 </table>
 <!--/Recent changes-->
