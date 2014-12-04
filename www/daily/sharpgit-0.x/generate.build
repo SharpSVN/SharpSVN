@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<project name="Generate log" default="build-log" basedir=".">
+
+  <target name="build-log">
+    <style
+      style="generate-daily-report.xsl"
+      in="project-log.xml"
+      out="index.html">
+      <parameters>
+        <parameter name="latestUrl" namespaceuri="" value="${dlUrl}" />
+        <parameter name="latestx64Url" namespaceuri="" value="${dlX64Url}" />
+        <parameter name="latestExUrl" namespaceuri="" value="${dlExUrl}" />        
+        <parameter name="latestVersion" namespaceuri="" value="${report.latestVersion}" />
+        <parameter name="latestName" namespaceuri="" value="${report.resultName}" />
+        <parameter name="buildRev" namespaceuri="" value="${report.buildRev}" />
+      </parameters>
+    </style>
+  </target>
+</project>
