@@ -50,14 +50,14 @@
         if ((g = m.Groups["issue"]).Success && !string.IsNullOrEmpty(g.Value))
         {
           XmlElement a = doc.CreateElement("a", html);
-          a.SetAttribute("href", "http://sharpsvn.net/issues/?id=" + g.Value);
+          a.SetAttribute("href", "http://sharpsvn.net/issue/" + g.Value);
           a.InnerText = m.Value;
           el.AppendChild(a);
         }
         else if ((g = m.Groups["rev"]).Success && !string.IsNullOrEmpty(g.Value))
         {
           XmlElement a = doc.CreateElement("a", html);
-          a.SetAttribute("href", "http://sharpsvn.net/rev/?r=" + g.Value);
+          a.SetAttribute("href", "http://sharpsvn.net/rev/" + g.Value);
           a.InnerText = m.Value;
           el.AppendChild(a);
         }
