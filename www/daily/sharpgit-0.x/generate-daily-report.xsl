@@ -50,14 +50,14 @@
         if ((g = m.Groups["issue"]).Success && !string.IsNullOrEmpty(g.Value))
         {
           XmlElement a = doc.CreateElement("a", html);
-          a.SetAttribute("href", "http://sharpgit.net/issues/?id=" + g.Value);
+          a.SetAttribute("href", "http://sharpgit.net/issues/" + g.Value);
           a.InnerText = m.Value;
           el.AppendChild(a);
         }
         else if ((g = m.Groups["rev"]).Success && !string.IsNullOrEmpty(g.Value))
         {
           XmlElement a = doc.CreateElement("a", html);
-          a.SetAttribute("href", "http://sharpgit.net/rev/?r=" + g.Value);
+          a.SetAttribute("href", "http://sharpgit.net/rev/" + g.Value);
           a.InnerText = m.Value;
           el.AppendChild(a);
         }
