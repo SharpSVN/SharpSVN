@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>
-          SharpGit-Daily Update - 0.2103.1027.110</title>
+          SharpGit-Daily Update - 0.2193.1043.126</title>
 <link rel="Stylesheet" type="text/css" href="daily.css"></head><body>
 <h1>
-          SharpGit-Daily Update - 0.2103.1027.110</h1>
+          SharpGit-Daily Update - 0.2193.1043.126</h1>
 
 
 <p>
@@ -15,25 +15,48 @@
 
 
 <h2>
-          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/9981/SGit-0.2103.1027.110.zip">SharpGit-0.2103.1027.110</a>.
+          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/10031/SGit-0.2193.1043.126.zip">SharpGit-0.2193.1043.126</a>.
         </h2>
 
 <p>
           The build script also supplies an <a href="">x64 version</a> of this Win32 build and a
-          <a href="https://sharpsvn.open.collab.net/files/documents/180/9982/SharpGit-v0.x-0.2103.1027.110.7z">package of all binaries</a> with some extras.
+          <a href="https://sharpsvn.open.collab.net/files/documents/180/10032/SharpGit-v0.x-0.2193.1043.126.7z">package of all binaries</a> with some extras.
         </p>
 
 
 
 <p>
           You can find older daily releases in the <a href="http://sharpgit.net/daily/?all=1">daily folder</a> of documents &amp; files.
-          The previous version of this report is still available in our <a href="http://sharpgit.net/daily/?id=1027">Subversion Repository</a>.
+          The previous version of this report is still available in our <a href="http://sharpgit.net/daily/?id=1043">Subversion Repository</a>.
         </p><p>Published daily builds will be available for at least a month after they are build.</p>
 
 
 
 <h2>Recent changes</h2>
 <table>
+<tr class="d"><td colspan="4">2015-01-07</td></tr>
+<tr><td> </td><td class="r"><a id="1042" href="http://sharpgit.net/rev/?r=1042">
+            [r1042]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpGit/GitClient/GitStatus.cpp, SharpGit/GitClient/GitStatusArgs.h, SharpGit/GitClient/GitStatusEventArgs.h, SharpGit/GitClientContext.h, SharpGit/Plumbing/GitRepository.cpp, SharpGit/stdafx.h, SharpGit.Tests/GitClientTests.cs, SharpGit.Tests/SharpGit.Tests.csproj, SharpGit.Tests/StatusTests.cs, SharpGit.Tests/TestBase.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Add support for generating directory names during status. This allows reusing
+a lot more svn logic for git handling in AnkhSvn and similar tools.</td></tr>
+<tr><td> </td><td class="r"><a id="1041" href="http://sharpgit.net/rev/?r=1041">
+            [r1041]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpGit:</strong> GitClient/GitStatus.cpp, GitClient/GitStatusArgs.h, GitClient/GitStatusEventArgs.h, Plumbing/GitRepository.cpp, UnmanagedStructs.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Use the status list directly, instead of via the callback to allow introducing
+our own status items between the callbacks. This will also allow producing more
+status information than just the integer.</td></tr>
+<tr><td> </td><td class="r"><a id="1040" href="http://sharpgit.net/rev/?r=1040">
+            [r1040]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpGit:</strong> GitClient/GitClient.cpp, GitClientContext.cpp, GitId.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Introduce a few more exception kinds</td></tr>
+<tr><td> </td><td class="r"><a id="1039" href="http://sharpgit.net/rev/?r=1039">
+            [r1039]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpGit/GitClient:</strong> GitClient.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Following up on <a href="http://sharpgit.net/rev/1037">r1037</a>, fix payload usage of the callbacks.</td></tr>
+<tr class="d"><td colspan="4">2015-01-06</td></tr>
+<tr><td> </td><td class="r"><a id="1034" href="http://sharpgit.net/rev/?r=1034">
+            [r1034]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpGit/Plumbing:</strong> GitRemote.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Make Push() behavior the same as before bumping to libgit2 0.22.0-rc1.</td></tr>
+<tr><td> </td><td class="r"><a id="1033" href="http://sharpgit.net/rev/?r=1033">
+            [r1033]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpGit:</strong> GitClient/GitCheckOutArgs.h, GitClient/GitClone.cpp, GitClient/GitCloneArgs.h, GitClient/GitResetArgs.h, GitClientContext.cpp, GitClientContext.h, Plumbing/GitConfiguration.cpp, Plumbing/GitConfiguration.h, Plumbing/GitRemote.cpp, Plumbing/GitRepository.cpp, Plumbing/GitRepository.h, UnmanagedStructs.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Update api for new libgit2 version. I see some remaining test failures.</td></tr>
 <tr class="d"><td colspan="4">2015-01-03</td></tr>
 <tr><td> </td><td class="r"><a id="1026" href="http://sharpgit.net/rev/?r=1026">
             [r1026]
