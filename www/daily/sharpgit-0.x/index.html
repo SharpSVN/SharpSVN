@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>
-          SharpGit-Daily Update - 0.2193.1050.136</title>
+          SharpGit-Daily Update - 0.2200.1059.145</title>
 <link rel="Stylesheet" type="text/css" href="daily.css"></head><body>
 <h1>
-          SharpGit-Daily Update - 0.2193.1050.136</h1>
+          SharpGit-Daily Update - 0.2200.1059.145</h1>
 
 
 <p>
@@ -15,25 +15,46 @@
 
 
 <h2>
-          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/10104/SGit-0.2193.1050.136.zip">SharpGit-0.2193.1050.136</a>.
+          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/10196/SGit-0.2200.1059.145.zip">SharpGit-0.2200.1059.145</a>.
         </h2>
 
 <p>
           The build script also supplies an <a href="">x64 version</a> of this Win32 build and a
-          <a href="https://sharpsvn.open.collab.net/files/documents/180/10105/SharpGit-v0.x-0.2193.1050.136.7z">package of all binaries</a> with some extras.
+          <a href="https://sharpsvn.open.collab.net/files/documents/180/10197/SharpGit-v0.x-0.2200.1059.145.7z">package of all binaries</a> with some extras.
         </p>
 
 
 
 <p>
           You can find older daily releases in the <a href="http://sharpgit.net/daily/?all=1">daily folder</a> of documents &amp; files.
-          The previous version of this report is still available in our <a href="http://sharpgit.net/daily/?id=1050">Subversion Repository</a>.
+          The previous version of this report is still available in our <a href="http://sharpgit.net/daily/?id=1059">Subversion Repository</a>.
         </p><p>Published daily builds will be available for at least a month after they are build.</p>
 
 
 
 <h2>Recent changes</h2>
 <table>
+<tr class="d"><td colspan="4">2015-01-12</td></tr>
+<tr><td> </td><td class="r"><a id="1057" href="http://sharpgit.net/rev/?r=1057">
+            [r1057]
+          </a></td><td class="a">rhuijben</td><td class="f">imports/Default.build, imports/patches/libgit2/hook-errors.patch, imports/scripts/openssl.build, imports/scripts/prepare.build, src/SharpGit/GitClientContext.cpp, src/SharpGit.Tests/SharpGit.Tests.csproj</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Bump nunit version, and enable error handling hook.</td></tr>
+<tr><td> </td><td class="r"><a id="1056" href="http://sharpgit.net/rev/?r=1056">
+            [r1056]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpGit:</strong> GitClientContext.cpp, GitClientContext.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Extend error handling via libgit2 to (in most cases) properly forward .Net
+exceptions.</td></tr>
+<tr><td> </td><td class="r"><a id="1055" href="http://sharpgit.net/rev/?r=1055">
+            [r1055]
+          </a></td><td class="a">rhuijben</td><td class="f">imports/Default.build, imports/patches/libgit2/0.22.0-rc1-vs2008fix.patch, imports/scripts/default.build, imports/scripts/prepare.build, src/SharpGit/GitClientContext.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Bump to libgit2 v0.22.0-rc2, by partially reverting the revert of the previous attempt</td></tr>
+<tr><td> </td><td class="r"><a id="1054" href="http://sharpgit.net/rev/?r=1054">
+            [r1054]
+          </a></td><td class="a">rhuijben</td><td class="f">imports/Default.build, imports/patches/libgit2/0.22.0-rc1-vs2008fix.patch, imports/scripts/SharpGit-Licenses.wxs, imports/scripts/default.build, imports/scripts/libgit2.build, imports/scripts/libssh2.build, imports/scripts/openssl.build, imports/scripts/prepare.build, src/SharpGit/AssemblyInfo.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Revert <a href="http://sharpgit.net/rev/1051">r1051</a>, as that breaks compatibility with Windows XP :(</td></tr>
+<tr><td> </td><td class="r"><a id="1052" href="http://sharpgit.net/rev/?r=1052">
+            [r1052]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpGit/GitClient/GitClone.cpp, SharpGit/GitClient/GitCloneArgs.h, SharpGit.Tests/GitClientTests.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Provide all repository init options via .Clone(), by hooking the create
+callback.</td></tr>
+<tr><td> </td><td class="r"><a id="1051" href="http://sharpgit.net/rev/?r=1051">
+            [r1051]
+          </a></td><td class="a">rhuijben</td><td class="f">imports/Default.build, imports/patches/libgit2/0.22.0-rc1-vs2008fix.patch, imports/scripts/SharpGit-Licenses.wxs, imports/scripts/default.build, imports/scripts/libgit2.build, imports/scripts/libssh2.build, imports/scripts/openssl.build, imports/scripts/prepare.build, src/SharpGit/AssemblyInfo.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Bump libgit2 and libssh2 versions to very latest versions, to allow removing openssl dependency.</td></tr>
 <tr class="d"><td colspan="4">2015-01-08</td></tr>
 <tr><td> </td><td class="r"><a id="1048" href="http://sharpgit.net/rev/?r=1048">
             [r1048]
