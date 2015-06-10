@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>
-          SharpSvn-Daily Update - 1.8993.3631.228</title>
+          SharpSvn-Daily Update - 1.8993.3655.5</title>
 <link rel="Stylesheet" type="text/css" href="daily.css"></head><body>
 <h1>
-          SharpSvn-Daily Update - 1.8993.3631.228</h1>
+          SharpSvn-Daily Update - 1.8993.3655.5</h1>
 
 
 <p>
@@ -15,89 +15,25 @@
 
 
 <h2>
-          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/11414/SSvn-1.8993.3631.228.zip">SharpSvn-1.8993.3631.228</a>.
+          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/11482/SSvn-1.8993.3655.5.zip">SharpSvn-1.8993.3655.5</a>.
         </h2>
 
 <p>
-          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/11415/SSvn-1.8993.3631.228-x64.zip">x64 version</a> of this Win32 build and a
-          <a href="https://sharpsvn.open.collab.net/files/documents/180/11416/SharpSvn-v1.900x-1.8993.3631.228.7z">package of all binaries</a> with some extras.
+          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/11483/SSvn-1.8993.3655.5-x64.zip">x64 version</a> of this Win32 build and a
+          <a href="https://sharpsvn.open.collab.net/files/documents/180/11484/SharpSvn-v1.900x-1.8993.3655.5.7z">package of all binaries</a> with some extras.
         </p>
 
 
 
 <p>
           You can find older daily releases in the <a href="http://sharpsvn.net/daily/?all=1">daily folder</a> of documents &amp; files.
-          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3631">Subversion Repository</a>.
+          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3655">Subversion Repository</a>.
         </p><p>Published daily builds will be available for at least a month after they are build.</p>
 
 
 
 <h2>Recent changes</h2>
 <table>
-<tr class="d"><td colspan="4">2015-03-20</td></tr>
-<tr><td> </td><td class="r"><a id="3585" href="http://sharpsvn.net/rev/?r=3585">
-            [r3585]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn.UI/Properties:</strong> AssemblyInfo.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Bump Copyright year</td></tr>
-<tr><td> </td><td class="r"><a id="3579" href="http://sharpsvn.net/rev/?r=3579">
-            [r3579]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> Args/SetRevisionProperty.h, Commands/SetRevisionProperty.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Allow passing old revision property value, to check again before setting.</td></tr>
-<tr class="d"><td colspan="4">2015-03-15</td></tr>
-<tr><td> </td><td class="r"><a id="3567" href="http://sharpsvn.net/rev/?r=3567">
-            [r3567]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> RemoteCommands/RemoteGetDeletedRevision.cpp, RemoteCommands/RemoteLog.cpp, RemoteCommands/ResolveRevision.cpp, SvnRemoteSession.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Optimize SvnRemoteClient.Log() to not resolve .Head before calling the
-server, but instead pass -1.</td></tr>
-<tr class="d"><td colspan="4">2015-03-11</td></tr>
-<tr><td> </td><td class="r"><a id="3560" href="http://sharpsvn.net/rev/?r=3560">
-            [r3560]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> SvnBase.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Remove workaround for load/unload in Subversion &lt;= 1.5</td></tr>
-<tr><td> </td><td class="r"><a id="3556" href="http://sharpsvn.net/rev/?r=3556">
-            [r3556]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> AssemblyInfo.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Add a space between sqlite and the version</td></tr>
-<tr class="d"><td colspan="4">2015-03-06</td></tr>
-<tr><td> </td><td class="r"><a id="3545" href="http://sharpsvn.net/rev/?r=3545">
-            [r3545]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> SvnClient.cpp, SvnClient.h, SvnClientConfiguration.h, SvnException.cpp, SvnException.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Tweak some helptext and provide version as string, to allow including things
-like '-beta1'</td></tr>
-<tr class="d"><td colspan="4">2015-03-03</td></tr>
-<tr><td> </td><td class="r"><a id="3531" href="http://sharpsvn.net/rev/?r=3531">
-            [r3531]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> SvnClientConfiguration.cpp, SvnClientContext.cpp, SvnClientContext.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Following up on <a href="http://sharpsvn.net/rev/3530">r3530</a>, avoid doing work on non ssh modes. Fix some
-variants and enable svn+plink:// to force plink, like svn+libssh2://
-and svn+builtin-ssh:// works for libssh2.</td></tr>
-<tr><td> </td><td class="r"><a id="3530" href="http://sharpsvn.net/rev/?r=3530">
-            [r3530]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> SvnClientConfiguration.cpp, SvnClientConfiguration.h, SvnClientContext.cpp, SvnClientContext.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Switch to using an enum for configuring what kind of ssh support is
-desired, to allow doing multiple things. Revert the removal of the
-SharpPlink detection.<br>
-With SharpPlink using shared connections, SharpPlink became much
-more usable and forcing usage of LibSSH2 may be a regression.</td></tr>
-<tr><td> </td><td class="r"><a id="3523" href="http://sharpsvn.net/rev/?r=3523">
-            [r3523]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpPlink/Resource.h, SharpPlink/SharpPlink.rc, SharpPlink/SharpPlink.vcxproj, SharpPlink/SharpPlink.vcxproj.filters, SharpPlink/SharpPlinkVersion.h, SharpPlink/small.ico, SharpSvn/AssemblyInfo.cpp, SharpSvn/SvnLibraryAttribute.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Produce a proper version resource for SharpPlink and reinstate including
-this information in SharpSvn.</td></tr>
-<tr class="d"><td colspan="4">2015-03-01</td></tr>
-<tr><td> </td><td class="r"><a id="3515" href="http://sharpsvn.net/rev/?r=3515">
-            [r3515]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> EventArgs/SvnConflictData.h, ReposCommands/CreateRepository.cpp, Stdafx.h, SvnEnums.h, SvnFileDiff.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">More extensionf for 1.9.0 support: add more new enum values, etc.</td></tr>
-<tr><td> </td><td class="r"><a id="3511" href="http://sharpsvn.net/rev/?r=3511">
-            [r3511]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpPlink, SharpPlink/SharpPlink.vcproj, SharpPlink/SharpPlink.vcxproj, SharpPlink/SharpPlink.vcxproj.filters</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Bump SharpPlink to the one of Putty 0.64. This introduces shared
-session support.</td></tr>
-<tr class="d"><td colspan="4">2015-02-28</td></tr>
-<tr><td> </td><td class="r"><a id="3510" href="http://sharpsvn.net/rev/?r=3510">
-            [r3510]
-          </a></td><td class="a">rhuijben</td><td class="f">imports/Default.build, src/nuget/SharpSvn.1.9-x64.nuspec</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Tweak for expected Subversion 1.9 beta</td></tr>
-<tr class="d"><td colspan="4">2015-02-23</td></tr>
-<tr><td> </td><td class="r"><a id="3509" href="http://sharpsvn.net/rev/?r=3509">
-            [r3509]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> AssemblyInfo.cpp, SvnNames.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Bump copyright year and add some SvnConfigNames.</td></tr>
-<tr class="d"><td colspan="4">2015-02-22</td></tr>
-<tr><td> </td><td class="r"><a id="3506" href="http://sharpsvn.net/rev/?r=3506">
-            [r3506]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/nuget:</strong> SharpSvn.1.9-x64.nuspec, SharpSvn.1.9-x86.nuspec</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Update some comments about 1.9</td></tr>
-<tr><td> </td><td class="r"><a id="3500" href="http://sharpsvn.net/rev/?r=3500">
-            [r3500]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> Args/CleanUp.h, Args/Copy.h, Args/Revert.h, Args/Status.h, Args/Vacuum.h, Commands/CleanUp.cpp, Commands/Copy.cpp, Commands/Revert.cpp, Commands/Status.cpp, Commands/Vacuum.cpp, LookCommands/LookChangeInfo.cpp, LookCommands/LookChanged.cpp, LookCommands/LookGetRepositoryId.cpp, LookCommands/LookGetRevisionProperty.cpp (and -8 other paths)</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Tweak code to run against 1.9.x instead of 1.9.0-alpha1.</td></tr>
 
 </table>
 <!--/Recent changes-->
