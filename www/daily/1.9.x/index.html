@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>
-          SharpSvn-Daily Update - 1.9000.3710.36</title>
+          SharpSvn-Daily Update - 1.9001.3740.53</title>
 <link rel="Stylesheet" type="text/css" href="daily.css"></head><body>
 <h1>
-          SharpSvn-Daily Update - 1.9000.3710.36</h1>
+          SharpSvn-Daily Update - 1.9001.3740.53</h1>
 
 
 <p>
@@ -15,25 +15,40 @@
 
 
 <h2>
-          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/11855/SSvn-1.9000.3710.36.zip">SharpSvn-1.9000.3710.36</a>.
+          The latest daily build is <a href="https://sharpsvn.open.collab.net/files/documents/180/12052/SSvn-1.9001.3740.53.zip">SharpSvn-1.9001.3740.53</a>.
         </h2>
 
 <p>
-          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/11856/SSvn-1.9000.3710.36-x64.zip">x64 version</a> of this Win32 build and a
-          <a href="https://sharpsvn.open.collab.net/files/documents/180/11857/SharpSvn-v1.900x-1.9000.3710.36.7z">package of all binaries</a> with some extras.
+          The build script also supplies an <a href="https://sharpsvn.open.collab.net/files/documents/180/12053/SSvn-1.9001.3740.53-x64.zip">x64 version</a> of this Win32 build and a
+          <a href="https://sharpsvn.open.collab.net/files/documents/180/12054/SharpSvn-v1.900x-1.9001.3740.53.7z">package of all binaries</a> with some extras.
         </p>
 
 
 
 <p>
           You can find older daily releases in the <a href="http://sharpsvn.net/daily/?all=1">daily folder</a> of documents &amp; files.
-          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3710">Subversion Repository</a>.
+          The previous version of this report is still available in our <a href="http://sharpsvn.net/daily/?id=3740">Subversion Repository</a>.
         </p><p>Published daily builds will be available for at least a month after they are build.</p>
 
 
 
 <h2>Recent changes</h2>
 <table>
+<tr class="d"><td colspan="4">2015-08-30</td></tr>
+<tr><td> </td><td class="r"><a id="3733" href="http://sharpsvn.net/rev/?r=3733">
+            [r3733]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> AssemblyInfo.cpp</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Tweak serf capitalization.</td></tr>
+<tr class="d"><td colspan="4">2015-08-24</td></tr>
+<tr><td> </td><td class="r"><a id="3720" href="http://sharpsvn.net/rev/?r=3720">
+            [r3720]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpPlink:</strong> SharpPlink.vcproj, SharpPlink.vcxproj</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Remove a #define that only causes warnings caused by duplication.</td></tr>
+<tr><td> </td><td class="r"><a id="3716" href="http://sharpsvn.net/rev/?r=3716">
+            [r3716]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpPlink, SharpPlink/SharpPlinkVersion.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Bump putty version</td></tr>
+<tr class="d"><td colspan="4">2015-08-14</td></tr>
+<tr><td> </td><td class="r"><a id="3711" href="http://sharpsvn.net/rev/?r=3711">
+            [r3711]
+          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/nuget:</strong> SharpSvn.1.9-x64.nuspec, SharpSvn.1.9-x86.nuspec</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Tweak nuget summary</td></tr>
 <tr class="d"><td colspan="4">2015-08-06</td></tr>
 <tr><td> </td><td class="r"><a id="3710" href="http://sharpsvn.net/rev/?r=3710">
             [r3710]
@@ -42,31 +57,6 @@
 <tr><td> </td><td class="r"><a id="3683" href="http://sharpsvn.net/rev/?r=3683">
             [r3683]
           </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> LookEventArgs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Remove obsolete file</td></tr>
-<tr><td> </td><td class="r"><a id="3682" href="http://sharpsvn.net/rev/?r=3682">
-            [r3682]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn/EventArgs/SvnLookInheritedPropertyListEventArgs.h, SharpSvn/LookCommands/LookInheritedPropertyList.cpp, SharpSvn/SharpSvn.vcxproj, SharpSvn/SharpSvn.vcxproj.filters, SharpSvn.Tests/LookCommands/InheritedPropertyTests.cs, SharpSvn.Tests/SharpSvn.Tests.csproj</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Complete SvnLook.InheritedPropertyList implementation.</td></tr>
-<tr><td> </td><td class="r"><a id="3680" href="http://sharpsvn.net/rev/?r=3680">
-            [r3680]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> LookArgs/SvnLookInheritedPropertyListArgs.h, LookCommands/LookInheritedPropertyList.cpp, LookEventArgs, LookEventArgs/SvnLookInheritedPropertyListeventArgs.h, SharpSvn.vcxproj, SharpSvn.vcxproj.filters, SvnClientEventArgs.h, SvnLookClient.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Checkpoint inherited property support for SvnLook. This commit adds the apis
-for it, but misses some essential implementation pieces.</td></tr>
-<tr><td> </td><td class="r"><a id="3677" href="http://sharpsvn.net/rev/?r=3677">
-            [r3677]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/SharpSvn:</strong> Args/InheritedPropertyList.h, Commands/InheritedPropertyList.cpp, SvnClient.h</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Allow using the SvnClient inherited property functions on more than the local
-paths at the current revision, by using an SvnTarget argument and a revision
-on the args object.</td></tr>
-<tr class="d"><td colspan="4">2015-06-18</td></tr>
-<tr><td> </td><td class="r"><a id="3670" href="http://sharpsvn.net/rev/?r=3670">
-            [r3670]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> SharpSvn/LookCommands/LookChanged.cpp, SharpSvn.Tests/LookCommands/GetChangesTests.cs, SharpSvn.Tests/LookCommands/HookTestBase.cs</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Minor SvnLookClient.Changed() improvement: Filter out non-changed
-replacements (such as the root, that is changed on every operation).<br>
-Extend test to cover <a href="http://sharpsvn.net/issue/24">issue#24</a>.</td></tr>
-<tr class="d"><td colspan="4">2015-06-10</td></tr>
-<tr><td> </td><td class="r"><a id="3659" href="http://sharpsvn.net/rev/?r=3659">
-            [r3659]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src/nuget:</strong> SharpSvn.1.9-x64.nuspec, SharpSvn.1.9-x86.nuspec</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Re-add SharpPlink to nuspec file</td></tr>
-<tr><td> </td><td class="r"><a id="3658" href="http://sharpsvn.net/rev/?r=3658">
-            [r3658]
-          </a></td><td class="a">rhuijben</td><td class="f"><strong class="f-pf">src:</strong> Copy-Dependencies.cmd</td></tr><tr><td colspan="2"></td><td class="l" colspan="2">Also copy the .pdb file</td></tr>
 
 </table>
 <!--/Recent changes-->
